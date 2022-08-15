@@ -1,1 +1,28 @@
+<!doctype Html>
 
+<html>
+  <head>
+    
+     <title> Project 1 </title>
+     
+     <style type="text/css">
+     </style>
+     
+  </head>
+  
+  <body>
+  
+    <p id="text"> Hello World! </p>
+  
+
+    <script>
+
+	document.getElementById("text").innerHtml= "hey there";
+
+    	alert("Hello World!");
+        
+    </script>
+  
+  </body>
+  
+</html>
