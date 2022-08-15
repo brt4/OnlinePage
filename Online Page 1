@@ -2,27 +2,32 @@
 
 <html>
   <head>
-    
+
      <title> Project 1 </title>
-     
+
      <style type="text/css">
      </style>
-     
+
   </head>
-  
-  <body>
-  
-    <p id="text"> Hello World! </p>
-  
+
+<body>
+
+    <p id="p1"> Hello World! </p>
+
+    <button id="b1"> Click ME! </button>
+
 
     <script>
 
-	document.getElementById("text").innerHtml= "hey there";
-
-    	alert("Hello World!");
         
+        document.getElementById("b1").onclick = function() {
+            document.getElementById("p1").innerHTML = "hey there";
+        }
+	    
+
+
     </script>
-  
+
   </body>
-  
+
 </html>
