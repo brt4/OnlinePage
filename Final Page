@@ -162,6 +162,8 @@
             <button id="blinkB3"> What's There?! </button>
             </div>
 
+            <h1> I Have done it! </h1>
+
         </div>
 
         <script type="text/javascript">
@@ -189,8 +191,8 @@
                 }
             }
 
-            document.getElementById("bimg1").onclick = function myFunction() {
-                var x = document.getElementById("worten");
+            document.getElementById("blinkB1").onclick = function myFunction() {
+                var x = document.getElementById("blinktext1");
                 if (x.style.visibility === "visible") {
                     x.style.visibility = "hidden";
                 } else {
@@ -198,8 +200,8 @@
                 }
             }
 
-            document.getElementById("bimg2").onclick = function myFunction() {
-                var x = document.getElementById("fnac");
+            document.getElementById("blinkB2").onclick = function myFunction() {
+                var x = document.getElementById("blinktext2");
                 if (x.style.visibility === "visible") {
                     x.style.visibility = "hidden";
                 } else {
@@ -207,22 +209,14 @@
                 }
             }
 
-            document.getElementById("bimg3").onclick = function myFunction() {
-                var x = document.getElementById("rp");
-                if (x.style.visibility === "visible") {
-                    x.style.visibility = "hidden";
-                } else {
-                    x.style.visibility = "visible";
-                }
-            
-            document.getElementById("blinkB1") = function() {
-                document.getElementById("blinktext1").innerHTML = "I AM BLINKING!!!";
-                var blink_speed = 500; // every 1000 == 1 second, adjust to suit
+            document.getElementById("blinkB3").onclick = function myFunction() {
+                var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
                 var t = setInterval(function () {
-                    var ele = document.getElementById('blinktext1');
+                    var ele = document.getElementById('blinktext3');
                     ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
                 }, blink_speed);
-            }
+                document.getElementById("blinktext3").innerHTML = "I AM BLINKING!!!";
+            }  
 
         </script>
 
