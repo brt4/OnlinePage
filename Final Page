@@ -147,19 +147,19 @@
 
             <div class="blinkcontainer">
 
-            <p> Normal text</p>
-            <button id="bimg1"> What's this?! </button>
+            <p id="blinktext1"> Normal text</p>
+            <button id="blinkB1"> What's this?! </button>
 
             </div>
 
             <div class="blinkcontainer">
-            <p> Normal text</p>
-            <button id="bimg2"> What's Here?! </button>
+            <p id="blinktext2"> Normal text</p>
+            <button id="blinkB2"> What's Here?! </button>
             </div>
 
             <div class="blinkcontainer">
-            <p> Normal text</p>
-            <button id="bimg3"> What's There?! </button>
+            <p id="blinktext3"> Normal text</p>
+            <button id="blinkB3"> What's There?! </button>
             </div>
 
         </div>
@@ -214,6 +214,14 @@
                 } else {
                     x.style.visibility = "visible";
                 }
+            
+            document.getElementById("blinkB1") = function() {
+                document.getElementById("blinktext1").innerHTML = "I AM BLINKING!!!";
+                var blink_speed = 500; // every 1000 == 1 second, adjust to suit
+                var t = setInterval(function () {
+                    var ele = document.getElementById('blinktext1');
+                    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+                }, blink_speed);
             }
 
         </script>
