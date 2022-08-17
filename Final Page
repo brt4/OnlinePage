@@ -10,7 +10,7 @@
 
             .maincontainer {
                 border: 1px black solid;
-                top: 50%;
+                top: 25%;
                 left: 50%;
                 position: absolute;
                 margin: auto;
@@ -19,7 +19,7 @@
 
             .maincontainer2 {
                 border: 1px black solid;
-                top: 25%;
+                top: 50%;
                 left: 31%;
                 position: absolute;
                 margin: 0 auto;
