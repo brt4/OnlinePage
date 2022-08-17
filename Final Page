@@ -26,6 +26,16 @@
                 transform: translate(-20%, -50%);
                 
             }
+
+            .maincontainer3 {
+                border: 1px black solid;
+                top: 75%;
+                left: 31%;
+                position: absolute;
+                margin: 0 auto;
+                transform: translate(-20%, -50%);
+                
+            }
             
             .container1 {
                 width: 150px;
@@ -42,6 +52,16 @@
                 height: 150px;
                 margin: 25px 25px;
                 border: 1px #fc1414 solid;
+                float: left;
+                text-align: center;
+                padding-bottom: 25px;
+            }
+
+            .blinkcontainer {
+                width: 220px;
+                height: 150px;
+                margin: 25px 25px;
+                border: 1px #1ea841 solid;
                 float: left;
                 text-align: center;
                 padding-bottom: 25px;
@@ -118,6 +138,27 @@
 
             <div class="imgcontainer">
             <img id="rp" src="Images/RP.png">
+            <button id="bimg3"> What's There?! </button>
+            </div>
+
+        </div>
+
+        <div class="maincontainer3">
+
+            <div class="blinkcontainer">
+
+            <p> Normal text</p>
+            <button id="bimg1"> What's this?! </button>
+
+            </div>
+
+            <div class="blinkcontainer">
+            <p> Normal text</p>
+            <button id="bimg2"> What's Here?! </button>
+            </div>
+
+            <div class="blinkcontainer">
+            <p> Normal text</p>
             <button id="bimg3"> What's There?! </button>
             </div>
 
