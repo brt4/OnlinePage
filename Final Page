@@ -209,6 +209,24 @@
                 }
             }
 
+            document.getElementById("bimg2").onclick = function myFunction() {
+                var x = document.getElementById("worten");
+                if (x.style.visibility === "fnac") {
+                    x.style.visibility = "hidden";
+                } else {
+                    x.style.visibility = "visible";
+                }
+            }
+
+            document.getElementById("bimg3").onclick = function myFunction() {
+                var x = document.getElementById("rp");
+                if (x.style.visibility === "visible") {
+                    x.style.visibility = "hidden";
+                } else {
+                    x.style.visibility = "visible";
+                }
+            }
+
             document.getElementById("blinkB3").onclick = function myFunction() {
                 var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
                 var t = setInterval(function () {
